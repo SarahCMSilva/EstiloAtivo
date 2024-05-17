@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+/* cor do card */
+.card {
+    background-color: rgb(34, 34, 34);
+    justify-content: space-around;
+    width: 15rem;
+    margin: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* cor do site sem nav */
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/* conteudo card */
+.conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    
+}
+.conteudo2 {
+    margin-top: 5rem;
+}
+/* imagem card */
+.conteudo img {
+    height: 200px;
+}
+
+/* titulo de todo conteudo */
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Sigmar', cursive;
+    font-family: "Play", sans-serif;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titulo Esportes do mundo Feminino */
+.navbar-brand {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #ffba62;
+    text-decoration: none;
+}
+
+/* Botoes a esquerda */
+.navbar-nav {
+    margin-left: 20rem;
+}
+
+/* todo conteudo de texto */
+.texto {
+    color: rgb(240, 238, 238);
+    padding: 75px;
+    font-family: 'Dancing Script', cursive;
+    font-size: medium;
+    text-align: center;
+    font-family: "Play", sans-serif;
+}
+
+.texto2 {
+    color: rgb(240, 238, 238);
+    padding: 75px;
+    font-family: 'Dancing Script', cursive;
+    font-size: medium;
+    text-align: left;
+}
+
+#logo {
+    width: 150px;
+    margin: 1rem;
+}
+
+#motivacional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffba62;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    padding: 100px;
+    font-size: 25px;
+}
+
+.frase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    border-radius: 50px;
+    width: 75rem;
+    height: 8rem;
+    margin-left: 2rem;
+    box-shadow: -5px 5px 3px 0px #ffffffdb;
+}
+
+.rodape {
+    
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 48, 53);
+    width: 100%;
+    height: 2rem;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+}
+
+.left {
+    flex: 1; /* Ocupa o máximo de espaço disponível */
+}
+
+.right {
+    margin-left: 20px; /* Espaço entre o texto e a imagem */
+}
+
+#imagem {
+    border: 5px solid white; /* Cor de borda branca */
+    box-shadow: 
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px white,
+        0 0 40px white;
+}
+
+/* CSS */
+.button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #FFFFFF, #F8F8F8 50%, #E0E0E0);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 16px; /* Diminuído de 20px para 16px */
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 120px; /* Diminuído de 140px para 120px */
+    padding: 2px; /* Diminuído de 3px para 2px */
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+    outline: 0;
+}
+
+.button-64 span {
+    background-color: #000000; /* Cor de fundo preta */
+    padding: 12px 20px; /* Diminuído de 16px 24px para 12px 20px */
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-64:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .button-64 {
+        font-size: 20px; /* Diminuído de 24px para 20px */
+        min-width: 160px; /* Diminuído de 196px para 160px */
+    }
+}
+/* Estilos para telas menores que 768px (Tablets e Smartphones) */
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinha o conteúdo ao centro */
+        margin: 2em;
+    }
+
+    .img {
+        width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
+        max-width: 100%;
+        height: auto;
+        max-height: 200px; /* Define uma altura máxima para evitar a rolagem horizontal */
+    }
+
+    .navbar-collapse {
+        display: none; /* Oculta o menu de navegação */
+    }
+
+    .navbar-toggler {
+        display: block; /* Exibe o botão de menu para dispositivos móveis */
+    }
+
+    .navbar-nav {
+        margin-left: 0; /* Remove o recuo do menu */
+    }
+}
+
+/* Estilos para telas maiores que 768px (Desktops) */
+@media (min-width: 768px) {
+    .navbar-collapse {
+        display: flex !important; /* Garante que o menu de navegação seja exibido */
+    }
+
+    .navbar-toggler {
+        display: none; /* Oculta o botão de menu para desktops */
+    }
+}
